@@ -22,4 +22,3 @@ Route::get('/regist', 'App\Http\Controllers\TopController@regist');
 Route::post('/confirm', 'App\Http\Controllers\TopController@confirm');
 Route::get('/payconfirm', 'App\Http\Controllers\TopController@payconfirm');
 Route::post('/paidconfirm', 'App\Http\Controllers\TopController@paidconfirm');
-Route::get('/treatRegist', 'App\Http\Controllers\TopController@treatRegist');

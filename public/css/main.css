@@ -18,7 +18,6 @@ table {
 }
 
 table th {
-    width: 20%;
     border-bottom: solid 2px #fb5144;
     padding: 10px 0;
     font-size: 40px;
@@ -26,14 +25,18 @@ table th {
 
 table td{
     border-bottom: solid 2px #ddd;
-    text-align: center;
     padding: 10px 0;
     font-size: 35px;
   }
 
-.regist input,select {
+.regist .rg-input {
     font-size: 35px;
     width: 60%;
+}
+
+.regist .check {
+    transform: scale(1.4);
+    margin-right: 20px;
 }
 
 .regist th,td{

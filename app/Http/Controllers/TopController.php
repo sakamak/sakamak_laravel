@@ -49,10 +49,6 @@ class TopController extends Controller
     {
         return view('regist');
     }
-    public function treatRegist()
-    {
-        return view('treatRegist');
-    }
     public function confirm(Request $request)
     {
         $money = new Money;
@@ -63,6 +59,8 @@ class TopController extends Controller
             $money->pay_user = $request->pay_user;
             if($request->treat_flg == 1){
                 $money->treat_flg = 1;
+            }else{
+                $money->treat_flg = 0;
             }
             $money->save();
             return view('confirm');
